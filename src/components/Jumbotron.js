@@ -5,12 +5,15 @@ import jumbotron2 from '../assets/svgs/jumbotron2.svg'
 const Jumbotron = () => {
     return (
         <div className='custom-jumbotron'>
-            <img src={jumbotron1} alt="Ilus" />
-            <div className="content">
-                <h1>Jumbotron</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptatibus ea dicta itaque consectetur ipsa.</p>
+            <img src={jumbotron1} alt="Ilus" className='ilus-jumbotron1' />
+            <div className="container">
+                <div className="content">
+                    <h1>Povider ERP Terbaik</h1>
+                    <p>Garda ERP, memecahkan segala masalah bisnis baik itu
+                    pengadaan, manufaktur, pelayanan, penjualan, dan finansial.</p>
+                </div>
             </div>
-            <img src={jumbotron2} alt="ilus2" className='jumbotron2' />
+            <img src={jumbotron2} alt="ilus2" className='ilus-jumbotron2' />
         </div>
     )
 }

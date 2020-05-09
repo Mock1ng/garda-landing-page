@@ -36,7 +36,11 @@ nav {
 }
 
 .bg-custom {
-    background: transparent;
+    background: #fff;
+
+    @include for-desktop() {
+        background: transparent;
+    }
 }
 
 .navbar-custom {
@@ -65,15 +69,14 @@ nav {
     }
 
     .navbar-nav {
-        background: #fff;
         position: relative;
         left: -16px;
         padding: 0 16px;
-        width: 100vw;
 
         @include for-desktop() {
             background: transparent;
             width: unset;
+            padding: 0;
         }
 
         .nav-item {
@@ -85,20 +88,14 @@ nav {
 
             .nav-link {
                 color: #000 !important;
-                font-weight: bold;
-                font-size: 20px;
+                font-size: 16px;
+                font-weight: unset;
 
 
-                // @include for-desktop() {
-                //     display: inline;
-                //     line-height: $nav-height;
-                // }
-
-                // @include hover-focus() {
-                //     color: rgba($yellow, 1.2);
-                //     font-weight: bold;
-                // }
-
+                @include for-desktop() {
+                    font-weight: bold;
+                    font-size: 20px;
+                }
             }
         }
 
@@ -106,19 +103,30 @@ nav {
             position: relative;
             border: 3px solid $blue-primary;
             border-radius: 10px;
-            width: 135px;
-            height: 46px;
+            width: 125px;
+            height: 40px;
             text-align: center;
+
+            @include for-desktop() {
+                width: 135px;
+                height: 46px;
+            }
 
             .login-button {
                 color: $blue-primary !important;
                 font-size: 16px;
                 padding: 0;
-                width: 130px;
-                height: 40px;
+                width: 120px;
+                height: 35px;
                 display: inline-block;
-                line-height: 42px;
+                line-height: 35px;
                 transition: 0.2s all;
+
+                @include for-desktop() {
+                    width: 130px;
+                    height: 40px;
+                    line-height: 41px;
+                }
 
                 &:hover {
                     background: $blue-primary;

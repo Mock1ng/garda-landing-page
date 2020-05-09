@@ -1,10 +1,59 @@
 .custom-jumbotron {
-    height: 700px;
+    height: 100vh;
     position: relative;
 
-    .jumbotron2 {
+    .ilus-jumbotron1 {
+        width: 300px;
+        height: auto;
+
+        @include for-desktop() {
+            width: unset;
+            height: unset;
+        }
+    }
+
+    .content {
+        // position: absolute;
+        // top: 120px;
+        // left: 50%;
+        // width: 530px;
+        text-align: center;
+        color: $blue-font;
+        z-index: 2;
+
+        @include for-desktop() {
+            position: absolute;
+            top: 120px;
+            left: 50%;
+            width: 530px;
+            color: $blue-font;
+            z-index: 2;
+            text-align: unset;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+    }
+
+    .ilus-jumbotron2 {
+        width: 400px;
+        height: auto;
         position: absolute;
         right: 0;
         bottom: 0;
+
+        @include for-desktop() {
+            width: unset;
+            height: unset;
+        }
     }
 }
