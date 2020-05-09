@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Open-sans;
+  src: url(./assets/fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Staatliches;
+  src: url(./assets/fonts/Staatliches/Staatliches-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import './components/styles/mixins';
+@import './components/styles/navbar';
+
+.panjang {
+  height: 200vh;
+}
