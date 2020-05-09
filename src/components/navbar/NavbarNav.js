@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import LoginButton from './LoginButton';
 
 const NavbarNav = () => {
     return (
@@ -12,8 +13,8 @@ const NavbarNav = () => {
             <li className="nav-item">
                 <a className="nav-link" href="!#">CONTACT</a>
             </li>
-            <li className="nav-item">
-                <a className="nav-link" href="!#">Login</a>
+            <li className="nav-item login-button-wrapper">
+                <LoginButton />
             </li>
         </ul>
     )

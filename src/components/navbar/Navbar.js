@@ -2,6 +2,15 @@ import React from 'react'
 import NavbarNav from './NavbarNav';
 
 const Navbar = () => {
+  let elem = (document.compatMode === "CSS1Compat") ?
+    document.documentElement :
+    document.body;
+
+  let height = elem.clientHeight;
+  let width = elem.clientWidth;
+  console.log(height, width);
+
+
   return (
     <nav className="navbar navbar-expand-lg navbar-custom bg-custom fixed-top">
       <div className="container-fluid">

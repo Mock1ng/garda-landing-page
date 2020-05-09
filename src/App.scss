@@ -8,15 +8,19 @@
   src: url(./assets/fonts/Staatliches/Staatliches-Regular.ttf);
 }
 
+@import './components/styles/mixins';
+@import './components/styles/variables';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@import './components/styles/mixins';
+
 @import './components/styles/navbar';
+@import './components//styles/jumbotron';
 
 .panjang {
-  height: 200vh;
+  // height: 200vh;
 }
