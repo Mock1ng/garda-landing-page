@@ -1,0 +1,58 @@
+.about {
+    height: max-content;
+    background: linear-gradient(240deg, $blue-background 60%, #27C2FC 120%);
+    color: #fff;
+    position: relative;
+
+    .about-content-wrapper {
+        height: 100%;
+        position: relative;
+        margin-top: 70px;
+        margin-bottom: 30px;
+
+        @include for-desktop() {
+            height: 495px;
+            margin-top: unset;
+            margin-bottom: unset;
+        }
+
+        .about-content {
+            position: relative;
+            width: 90%;
+
+            @include for-desktop() {
+                top: 50%;
+                transform: translate(0, -50%);
+                position: absolute;
+            }
+
+            h2 {
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .about-img-wrapper {
+        position: relative;
+        margin-bottom: 70px;
+
+        @include for-desktop() {
+            right: -50px;
+        }
+
+        img {
+            width: 100%;
+
+            @include for-desktop() {
+                position: absolute;
+                right: 0;
+                height: 495px;
+            }
+        }
+    }
+}

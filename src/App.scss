@@ -20,7 +20,19 @@
 
 @import './components/styles/navbar';
 @import './components//styles/jumbotron';
+@import './components/styles/about';
+
+.container-fluid {
+
+  @include for-desktop() {
+    width: 100%;
+    padding-right: 65px;
+    padding-left: 65px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .panjang {
-  // height: 200vh;
+  height: 100vh;
 }
