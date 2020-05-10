@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: Open-sans-bold;
+  src: url(./assets/fonts/Open_Sans/OpenSans-Bold.ttf);
+}
+
+@font-face {
   font-family: Staatliches;
   src: url(./assets/fonts/Staatliches/Staatliches-Regular.ttf);
 }
@@ -15,12 +20,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open-sans';
+}
+
+body {
+  // overflow: hidden;
 }
 
 
 @import './components/styles/navbar';
 @import './components//styles/jumbotron';
 @import './components/styles/about';
+@import './components/styles/price';
 
 .container-fluid {
 

@@ -3,6 +3,7 @@
     background: linear-gradient(240deg, $blue-background 60%, #27C2FC 120%);
     color: #fff;
     position: relative;
+    overflow-y: hidden;
 
     .about-content-wrapper {
         height: 100%;
@@ -51,7 +52,8 @@
             @include for-desktop() {
                 position: absolute;
                 right: 0;
-                height: 495px;
+                width: 50vw;
+                // height: 495px;
             }
         }
     }

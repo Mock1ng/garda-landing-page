@@ -2,13 +2,13 @@ import React from 'react'
 import NavbarNav from './NavbarNav';
 
 const Navbar = () => {
-  let elem = (document.compatMode === "CSS1Compat") ?
-    document.documentElement :
-    document.body;
+  // let elem = (document.compatMode === "CSS1Compat") ?
+  //   document.documentElement :
+  //   document.body;
 
-  let height = elem.clientHeight;
-  let width = elem.clientWidth;
-  console.log(height, width);
+  // let height = elem.clientHeight;
+  // let width = elem.clientWidth;
+  // console.log(height, width);
 
 
   return (

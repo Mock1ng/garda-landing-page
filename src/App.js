@@ -2,16 +2,21 @@ import React from 'react';
 import Navbar from './components/navbar/Navbar';
 import Jumbotron from './components/Jumbotron';
 import About from './components/About';
+import PriceList from './components/priceList/PriceList';
+import { PlanProvider } from './components/PlanContext';
 import './App.scss';
 
 function App() {
   return (
-    <div className='panjang'>
-      <Navbar />
-      <Jumbotron />
-      <About />
-      <div className="panjang">hehe</div>
-    </div>
+    <PlanProvider>
+      <div>
+        <Navbar />
+        <Jumbotron />
+        <About />
+        <PriceList />
+        <div className="panjang"></div>
+      </div>
+    </PlanProvider>
   );
 }
 
