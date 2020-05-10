@@ -23,6 +23,10 @@
   font-family: 'Open-sans';
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   // overflow: hidden;
 }
@@ -32,6 +36,8 @@ body {
 @import './components//styles/jumbotron';
 @import './components/styles/about';
 @import './components/styles/price';
+@import './components/styles/contact';
+@import './components/styles/footer';
 
 .container-fluid {
 

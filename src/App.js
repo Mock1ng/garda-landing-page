@@ -4,6 +4,8 @@ import Jumbotron from './components/Jumbotron';
 import About from './components/About';
 import PriceList from './components/priceList/PriceList';
 import { PlanProvider } from './components/PlanContext';
+import Contact from './components/contact/Contact';
+import Footer from './components/Footer';
 import './App.scss';
 
 function App() {
@@ -14,7 +16,8 @@ function App() {
         <Jumbotron />
         <About />
         <PriceList />
-        <div className="panjang"></div>
+        <Contact />
+        <Footer />
       </div>
     </PlanProvider>
   );

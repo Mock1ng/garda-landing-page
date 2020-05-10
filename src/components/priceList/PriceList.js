@@ -10,7 +10,7 @@ const PriceList = () => {
 
 
     return (
-        <div className='price'>
+        <div className='price' id='price-list'>
             <div className="container-fluid">
                 <div className="row text-center">
                     <div className="col-sm-6 offset-sm-3">

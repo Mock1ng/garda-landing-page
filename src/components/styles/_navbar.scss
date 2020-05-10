@@ -62,6 +62,7 @@ nav {
             background: transparent;
             width: unset;
             padding: 0;
+            left: unset;
         }
 
         .nav-item {
@@ -76,9 +77,8 @@ nav {
                 font-size: 16px;
                 font-weight: unset;
 
-
                 @include for-desktop() {
-                    font-weight: bold;
+                    font-family: 'Open-sans-bold';
                     font-size: 20px;
                 }
             }
