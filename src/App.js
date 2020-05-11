@@ -6,16 +6,24 @@ import PriceList from './components/priceList/PriceList';
 import { PlanProvider } from './components/PlanContext';
 import Contact from './components/contact/Contact';
 import Footer from './components/Footer';
-import Login from './components/Login';
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.scss';
 
 function App() {
+
+  let y = window.scrollY;
+  let body = document.body;
+  let bodyHeight = body.scrollTop
+  console.log(body);
+
+  const coba = () => {
+    window.scrollTo(400, 400);
+  }
 
   return (
     <PlanProvider>
       <Navbar />
       <Jumbotron />
+      <button onClick={coba}>COBA</button>
       <About />
       <PriceList />
       <Contact />

@@ -10,6 +10,10 @@ const Navbar = () => {
   // let width = elem.clientWidth;
   // console.log(height, width);
 
+  // let contact = document.getElementsByClassName('contact')[0];
+  // let tinggiContact = contact.offset();
+
+
 
   return (
     <nav className="navbar navbar-expand-lg navbar-custom bg-custom fixed-top">
