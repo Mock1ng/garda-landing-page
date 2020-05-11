@@ -6,9 +6,9 @@ export const PlanProvider = props => {
     const basic = {
         title: 'BASIC',
         desc: 'Sangat cocok untuk para pengusaha baru',
-        priceBefore: 7500,
+        priceBefore: '7,500',
         discount: 33,
-        realPrice: 5000,
+        realPrice: '5,000',
         services: [
             'Mencatat barang masuk',
             'Mencatat barang keluar',
@@ -19,9 +19,9 @@ export const PlanProvider = props => {
     const business = {
         title: 'BUSINESS',
         desc: 'Paket yang tepat untuk bisnis menengah ke atas',
-        priceBefore: 15000,
+        priceBefore: '15,000',
         discount: 40,
-        realPrice: 9000,
+        realPrice: '9,000',
         services: [
             'Mencatat barang masuk',
             'Mencatat barang keluar',
@@ -33,9 +33,9 @@ export const PlanProvider = props => {
     const entrepreneur = {
         title: 'ENTREPRENEUR',
         desc: 'Pilihan terbaik untuk mengembangkan bisnis',
-        priceBefore: 50000,
+        priceBefore: '50,000',
         discount: 50,
-        realPrice: 12500,
+        realPrice: '12,500',
         services: [
             'Mencatat barang masuk',
             'Mencatat barang keluar',

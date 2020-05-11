@@ -1,3 +1,4 @@
+// Navbar Component
 nav {
     @include for-desktop() {
         padding: 8px 0 !important;
@@ -38,19 +39,22 @@ nav {
     }
 }
 
+$nav-background: transparent;
+
 .bg-custom {
     background: #fff;
+    transition: 0.2s all;
 
     @include for-desktop() {
-        background: #fff; // NANTI UBAH KE TRANSPARAN LAGI
+        background: transparent;
     }
 }
 
 .navbar-custom {
     .navbar-brand {
-        color: #000;
         padding: 0;
         display: inline;
+        color: #000;
     }
 
     .navbar-nav {

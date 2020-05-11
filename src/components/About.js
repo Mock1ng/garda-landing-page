@@ -2,6 +2,7 @@ import React from 'react';
 import imgAbout1 from '../assets/imgs/img-about1.png';
 
 const About = () => {
+
     return (
         <div className='about' id='about'>
             <div className="container-fluid">

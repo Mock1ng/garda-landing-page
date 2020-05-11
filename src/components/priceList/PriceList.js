@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { PlanContext } from '../PlanContext';
+import { PlanContext } from '../contexts/PlanContext';
 import PriceCard from './PriceCard';
 
 const PriceList = () => {

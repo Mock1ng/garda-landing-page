@@ -27,11 +27,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  // overflow: hidden;
-}
-
-
 @import './components/styles/navbar';
 @import './components//styles/jumbotron';
 @import './components/styles/about';
@@ -41,7 +36,6 @@ body {
 @import './components/styles/login';
 
 .container-fluid {
-
   @include for-desktop() {
     width: 100%;
     padding-right: 65px;
@@ -49,8 +43,4 @@ body {
     margin-right: auto;
     margin-left: auto;
   }
-}
-
-.panjang {
-  height: 100vh;
 }

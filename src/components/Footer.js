@@ -4,7 +4,6 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className="row">
-                {/* <div className="col-sm"> */}
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-5">
@@ -41,12 +40,9 @@ const Footer = () => {
             </div>
             <div className="row copyright">
                 <div className="container">
-                    {/* <div className="col-sm"> */}
                     <h5>&copy; 2020 GARDA. All Rights Reserved</h5>
-                    {/* </div> */}
                 </div>
             </div>
-            {/* </div> */}
         </div>
     )
 }
