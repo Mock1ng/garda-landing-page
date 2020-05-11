@@ -85,32 +85,23 @@ nav {
         }
 
         .login-button-wrapper {
-            position: relative;
-            border: 3px solid $blue-primary;
-            border-radius: 10px;
-            width: 125px;
-            height: 40px;
-            text-align: center;
-
-            @include for-desktop() {
-                width: 135px;
-                height: 46px;
-            }
 
             .login-button {
                 color: $blue-primary !important;
                 font-size: 16px;
                 padding: 0;
-                width: 120px;
-                height: 35px;
+                width: 115px;
+                height: 40px;
                 display: inline-block;
-                line-height: 35px;
                 transition: 0.2s all;
+                background: #fff;
+                border: 3px solid $blue-primary;
+                border-radius: 10px;
 
                 @include for-desktop() {
-                    width: 130px;
-                    height: 40px;
-                    line-height: 41px;
+                    width: 129px;
+                    height: 44px;
+
                 }
 
                 &:hover {

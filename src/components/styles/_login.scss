@@ -1,0 +1,94 @@
+.login-wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background: rgba($footer, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    z-index: 100000000;
+    display: block;
+
+    .login-form {
+        width: 300px;
+        background: #fff;
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $footer;
+
+        @include for-desktop () {
+            width: 400px;
+        }
+
+        .close-btn {
+            width: 50px;
+            height: 50px;
+            background: transparent;
+            cursor: pointer;
+            margin-left: auto;
+            position: absolute;
+            top: 30px;
+            right: 0px;
+
+            .line1 {
+                width: 21px;
+                height: 2px;
+                background: #818181;
+                transform: rotate(45deg) translate(1px, 0px);
+            }
+
+            .line2 {
+                width: 21px;
+                height: 2px;
+                background: #818181;
+                transform: rotate(135deg)translate(-1px, 1px);
+            }
+        }
+
+        .title {
+            font-size: 30px;
+            margin-bottom: 30px;
+            background: #024048;
+            display: inline-block;
+            color: #fff;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            letter-spacing: 5px;
+            font-family: 'Staatliches';
+        }
+
+        .login-button {
+            width: 100%;
+            background: $blue-primary;
+            border: none;
+            border-radius: 10px;
+            height: 40px;
+            color: #fff;
+            font-weight: bold;
+            transition: 0.2s;
+            margin-bottom: 20px;
+
+            &:hover {
+                filter: brightness(92%);
+            }
+        }
+    }
+
+    .forget-password {
+        font-size: 14px;
+        color: #5f5f5f;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .register {
+        font-size: 14px;
+        color: #5f5f5f;
+        display: block;
+    }
+}
